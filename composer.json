@@ -1,11 +1,11 @@
 {
-    "name": "matt/filename-individualiser",
+    "name": "mattgorle/filename-suffixer",
     "description": "Ensures unique filenames by adding a numeric suffix",
     "type": "library",
     "license": "mit",
     "autoload": {
         "psr-4": {
-            "Matt\\FilenameIndividualiser\\": "src/"
+            "Gorle\\FilenameSuffixer\\": "src/"
         }
     },
     "authors": [
@@ -14,5 +14,7 @@
             "email": "3032672+mattgorle@users.noreply.github.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^7.2|^8.0"
+    }
 }
