@@ -19,6 +19,14 @@ class FilenameSuffixer
     public static $suffixStartsAt     = 1;
     public static $pathSeparator      = '/';
 
+    public static function reset()
+    {
+        static::$extensionSeparator = '.';
+        static::$suffixSeparator = '-';
+        static::$suffixStartsAt = 1;
+        static::$pathSeparator = '/';
+    }
+
     public static function suffix($filename, $path = '')
     {
         $filepath = static::buildFilePath($filename, $path);
