@@ -47,12 +47,8 @@ class FilenameSuffixer
         return $path . static::$pathSeparator . $filename;
     }
 
-    protected static function appendSuffix(string $filename, int $suffix = null)
+    protected static function appendSuffix(string $filename, int $suffix)
     {
-        if ($suffix === null) {
-            $suffix = static::$suffixStartsAt;
-        }
-
         $basename = $filename;
 
         if (stristr($filename, static::$extensionSeparator) !== false) {
