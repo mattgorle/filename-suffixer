@@ -7,8 +7,12 @@ is not changed.
 
 ### Examples
 
-- `test_file.txt` becomes `test_file-1.txt` if a file called `test_file.txt` already exists
-- `test_file.txt` is unchanged if a file called `test_file.txt` does not exist
+For a file named `test_file.txt`, `FilenameSuffixer::suffix` will return:
+
+- `test_file.txt` if the file does not exist
+- `test_file-1.txt` if a file called `test_file.txt` already exists
+- `test_file-2.txt` if files called `test_file.txt` and `test_file-1.txt` already exist
+- etc...
 
 ## Installation
 
