@@ -6,6 +6,10 @@ use PHPUnit\Framework\TestCase;
 
 class FilenameSuffixerTest extends TestCase
 {
+    public function setUp(): void
+    {
+        FilenameSuffixer::reset();
+    }
 
     public function testSuffixCreatesASuffix()
     {
