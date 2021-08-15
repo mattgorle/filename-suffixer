@@ -14,6 +14,10 @@ For a file named `test_file.txt`, `FilenameSuffixer::suffix` will return:
 - `test_file-2.txt` if files called `test_file.txt` and `test_file-1.txt` already exist
 - etc...
 
+## Versioning
+
+This project follows semantic versioning.
+
 ## Installation
 
 ```bash
