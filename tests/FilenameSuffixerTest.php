@@ -38,4 +38,14 @@ class FilenameSuffixerTest extends TestCase
 
         $this->assertEquals($filename . '-1', FilenameSuffixer::suffix($filename, __DIR__));
     }
+
+    public function testFileExtensionSeparatorCanBeChanged()
+    {
+        FilenameSuffixer::$extensionSeparator = '_';
+
+        $filename = __DIR__ . '/test_file_with_no_extension';
+        $expectedFilename = __DIR__ . '/test_file_with_no-1_extension';
+
+        $this->assertEquals($expectedFilename, FilenameSuffixer::suffix($filename));
+    }
 }
