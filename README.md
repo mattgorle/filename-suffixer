@@ -58,3 +58,12 @@ FilenameSuffixer::$pathSeparator = ':';
 FilenameSuffixer::$suffixStartsAt = 31;
 FilenameSuffixer::$suffixSeparator = '_';
 ```
+
+## Resetting the suffixer after changing defaults
+
+> Help, I've changed loads of stuff and now I can't find my way back!!! :sob:
+
+Simply call `FilenameSuffixer::reset()` and the initial defaults will be reinstated.
+
+Honestly, I don't know if this is going to be a useful feature - it came up in testing and it feels more like a 
+consequence of implementing this as a static class.  Probably needs some thought!
