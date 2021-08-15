@@ -2,8 +2,7 @@
 
 Ensures that filenames are unique by appending a suffix to the filename.
 
-If a file with `$filename` does not already exist, then the filename
-is not changed.
+If a file with `$filename` does not already exist, then the original filename is offered instead of an altered one.
 
 ### Examples
 
