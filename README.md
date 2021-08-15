@@ -17,7 +17,7 @@ For a file named `test_file.txt`, `FilenameSuffixer::suffix` will return:
 ## Installation
 
 ```bash
-composer require mattgorle/filename-prefixer
+composer require mattgorle/filename-suffixer
 ```
 
 ## Usage
